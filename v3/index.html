@@ -48,6 +48,14 @@
     .lead-section{background:radial-gradient(circle at 80% 20%,#0b3b78 0,#082a5c 37%,#051b40 78%)}.lead-section .title{font-size:clamp(30px,3.3vw,42px)}.form{border:1px solid rgba(255,255,255,.35)}
     .faq{background:linear-gradient(180deg,#f7fbff,#eef5fc)}footer{border-top:1px solid rgba(255,255,255,.08)}
     @media(max-width:980px){.hero .wrap{grid-template-columns:1fr}.hero-visual{margin-left:0}.problem-grid{grid-template-columns:1fr 1fr}.why .wrap{grid-template-columns:1fr 1fr 1fr}}
+    /* Correcao mobile do hero: elimina o gap e os flutuantes soltos (so <=980px; nao afeta o desktop, que esta otimo) */
+    @media(max-width:980px){
+      .hero .wrap{min-height:auto}
+      .hero-visual{min-height:auto;margin-left:0;margin-top:6px;justify-content:center}
+      .hero-visual:before{display:none}
+      .hero-visual>img{width:100%;max-width:520px;-webkit-mask-image:none;mask-image:none}
+      .scene-icon,.scene-place,.float-chip{display:none}
+    }
   </style>
 </head>
 <body>
