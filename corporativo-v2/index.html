@@ -174,6 +174,98 @@
     .foto-band{padding:6px 0 4px}
     .foto-band img{width:100%;height:300px;object-fit:cover;object-position:center 28%;border-radius:18px;box-shadow:0 18px 42px rgba(27,33,69,.14)}
     @media(max-width:760px){.foto-band img{height:210px}}
+
+    /* ===== TOPO — replica do mockup (cores amostradas do original) ===== */
+    .chero{position:relative;background-image:linear-gradient(90deg,rgba(255,255,255,.98) 0%,rgba(255,255,255,.95) 30%,rgba(255,255,255,.62) 48%,rgba(255,255,255,.06) 64%,rgba(255,255,255,0) 74%),url(../assets/corp-hero-bg.jpg);background-size:cover;background-position:right center;background-repeat:no-repeat}
+    .chero .wrap{position:relative;min-height:474px;display:grid;grid-template-columns:1.46fr 1fr;align-items:center;gap:20px;padding:34px 22px 26px}
+    .ckicker{font-size:14px;font-weight:800;letter-spacing:2.2px;text-transform:uppercase;color:#F84000;margin-bottom:26px}
+    .chero h1{font-size:clamp(33px,3.9vw,55px);font-weight:900;line-height:1.06;letter-spacing:-1.7px;color:#121E4E;max-width:560px}
+    .chero h1 span{color:#006CC0}
+    .clead{font-size:clamp(15.5px,1.15vw,18.5px);color:#3C4C6C;font-weight:500;line-height:1.62;margin:26px 0 34px;max-width:540px}
+    .cctas{display:flex;gap:18px;flex-wrap:nowrap;align-items:center}
+    .cbtn{display:inline-flex;align-items:center;justify-content:center;gap:11px;font-weight:800;font-size:17px;padding:18px 28px;border-radius:11px;border:none;cursor:pointer;font-family:inherit;transition:.16s;white-space:nowrap}
+    .cbtn-wa{background:#F64E00;color:#fff;box-shadow:0 12px 28px rgba(246,78,0,.26)}
+    .cbtn-wa:hover{filter:brightness(1.06);transform:translateY(-2px)}
+    .cbtn-ghost{background:#fff;color:#0066C6;border:1.6px solid #CFE0F2}
+    .cbtn-ghost:hover{border-color:#0066C6}
+    .cbtn svg{width:20px;height:20px;flex-shrink:0}
+    .ctrust{display:flex;flex-wrap:nowrap;align-items:center;margin-top:28px;list-style:none}
+    .ctrust li{display:flex;align-items:center;gap:9px;font-size:14.5px;font-weight:700;color:#000028;padding:2px 17px;white-space:nowrap}
+    .ctrust li:first-child{padding-left:0}
+    .ctrust li+li{border-left:1px solid #d6e0ea}
+    .ctrust svg{width:20px;height:20px;color:#1C7CD0;flex-shrink:0}
+    .chero-card{justify-self:start;align-self:center;background:#fff;border-radius:18px;box-shadow:0 22px 52px rgba(18,30,78,.16);padding:22px 32px 22px 24px;display:flex;align-items:center;gap:20px;max-width:430px}
+    .c24{width:78px;height:78px;border-radius:50%;border:2px dashed #cfe3f6;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+    .c24 b{font-size:23px;font-weight:900;color:#006CC6;letter-spacing:-.5px}
+    .chero-card .ct b{display:block;font-size:18px;font-weight:800;color:#000028;margin-bottom:3px}
+    .chero-card .ct span{font-size:15px;color:#3C4C6C;font-weight:500}
+    /* faixa inferior de beneficios */
+    .cbenes{background:#fff;padding:2px 0 42px}
+    .cbenes-box{display:grid;grid-template-columns:repeat(6,1fr);padding:8px 0 0}
+    .cbene{display:flex;flex-direction:column;align-items:center;justify-content:flex-start;text-align:center;gap:13px;padding:2px 14px}
+    .cbene+.cbene{border-left:1px solid #DEE5EE}
+    .cbene svg{width:32px;height:32px;color:#1478C8;flex-shrink:0}
+    .cbene span{font-size:14.5px;font-weight:700;color:#000028;line-height:1.3}
+    @media(max-width:1000px){.cbenes-box{grid-template-columns:repeat(3,1fr);gap:22px 0}.cbene:nth-child(3n+1){border-left:none}}
+    @media(max-width:900px){
+      .chero{background-image:linear-gradient(180deg,rgba(255,255,255,.97) 0%,rgba(255,255,255,.90) 55%,rgba(255,255,255,.80) 100%),url(../assets/corp-hero-bg.jpg);background-position:68% center}
+      .chero .wrap{grid-template-columns:1fr;min-height:auto;padding:46px 22px 42px}
+      .chero-card{justify-self:stretch;margin-top:30px;max-width:none}
+    }
+    @media(max-width:900px){.cctas{flex-wrap:wrap}.ctrust{flex-wrap:wrap}.ctrust li{white-space:normal}}
+    @media(max-width:620px){.cbenes-box{grid-template-columns:1fr 1fr}.cbene{border-left:none!important}.ctrust li{padding:2px 12px}.ctrust li+li{border-left:none}}
+
+    /* ===== MEIO DA PAGINA — replica do mockup (cores amostradas) ===== */
+    .msol{background:#042048;color:#fff;padding:62px 0 58px}
+    .msol .wrap{display:grid;grid-template-columns:1fr 1.14fr;gap:50px;align-items:center}
+    .mk{font-size:13px;font-weight:800;letter-spacing:2.2px;text-transform:uppercase;color:#F84000;margin-bottom:18px}
+    .msol h2{font-size:clamp(26px,3.05vw,39px);font-weight:900;line-height:1.12;letter-spacing:-1px;color:#FCFCFC;max-width:13ch}
+    .msol p{color:#C5D2E6;font-size:16.5px;font-weight:500;line-height:1.62;margin-top:20px;max-width:50ch}
+    .mtab{border:1px solid rgba(255,255,255,.17);border-radius:12px;overflow:hidden}
+    .mtab .r{display:grid;grid-template-columns:1fr 1.02fr 1.12fr}
+    .mtab .r+.r{border-top:1px solid rgba(255,255,255,.13)}
+    .mtab .c{padding:17px 20px;font-size:15px;color:#DCE5F2;display:flex;align-items:center;line-height:1.35}
+    .mtab .c+.c{border-left:1px solid rgba(255,255,255,.13)}
+    .mtab .r.h .c{font-size:12.5px;font-weight:800;letter-spacing:1.1px;text-transform:uppercase;color:#FCFCFC;padding-top:19px;padding-bottom:19px}
+    .mtab .r.h .c.hi{color:#FC640C}
+    .mtab .c.hi{background:rgba(255,255,255,.06);color:#fff;font-weight:800}
+    /* faixa de foto */
+    .mband{background:#fff;padding:0}
+    .mband .inner{margin:0 14px;border-radius:16px;overflow:hidden;line-height:0}
+    .mband img{width:100%;height:292px;object-fit:cover;object-position:center 46%}
+    /* por que */
+    .mwhy{background:#fff;padding:56px 0 62px}
+    .mwhy .wrap{display:grid;grid-template-columns:1fr 1.04fr;gap:50px;align-items:start}
+    .mwhy h2{font-size:clamp(25px,2.95vw,37px);font-weight:900;line-height:1.14;letter-spacing:-.9px;color:#081C48;max-width:16ch;margin-bottom:30px}
+    .mwlist{display:grid;gap:22px}
+    .mwitem{display:flex;gap:16px;align-items:flex-start;border-left:3px solid #F84C1C;padding-left:18px}
+    .mwico{width:56px;height:56px;border-radius:50%;background:#ECF0F8;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+    .mwico svg{width:26px;height:26px;color:#F84C1C}
+    .mwitem h3{font-size:17.5px;font-weight:800;color:#081C48;margin-bottom:4px}
+    .mwitem p{font-size:15px;color:#5A6B84;font-weight:500;line-height:1.5}
+    .mfacts{background:#fff;border:1px solid #E6ECF4;border-radius:20px;box-shadow:0 18px 44px rgba(8,28,72,.08);display:grid;grid-template-columns:1fr 1fr;overflow:hidden}
+    .mfact{display:flex;gap:16px;align-items:flex-start;padding:30px 24px}
+    .mfact:nth-child(odd){border-right:1px solid #EDF1F7}
+    .mfact:nth-child(-n+2){border-bottom:1px solid #EDF1F7}
+    .mfico{width:56px;height:56px;border-radius:14px;background:#ECF0F8;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+    .mfico svg{width:26px;height:26px;color:#1B5FC0}
+    .mfact .n{font-size:34px;font-weight:900;line-height:1;letter-spacing:-1.4px;color:#00348C}
+    .mfact .t{font-size:14px;color:#5A6B84;font-weight:500;line-height:1.42;margin-top:7px}
+    .mfact.or .n{color:#FC640C}
+    .mfact.or .mfico svg{color:#FC640C}
+    @media(max-width:940px){
+      .msol .wrap,.mwhy .wrap{grid-template-columns:1fr;gap:34px}
+      .msol h2,.mwhy h2{max-width:none}
+      .mband img{height:220px}
+    }
+    @media(max-width:620px){
+      .mtab .c{padding:13px 12px;font-size:13.5px}
+      .mtab .r.h .c{font-size:11px;letter-spacing:.6px;padding:14px 12px}
+      .mfacts{grid-template-columns:1fr}
+      .mfact{border-right:none!important}
+      .mfact:not(:last-child){border-bottom:1px solid #EDF1F7}
+      .mband img{height:170px}
+    }
   </style>
 </head>
 <body>
@@ -189,7 +281,7 @@
       </a>
       <div class="top-right">
         <div class="top-phone"><span>Comercial</span>(11) 2500-2050</div>
-        <a class="btn btn-wa js-wa" href="#" data-loc="topbar">
+        <a class="btn btn-wa js-wa" href="#" data-loc="topbar" data-msg="Olá! Vim pela página de Link Corporativo, pelo botão do topo do site, e quero falar com um especialista.">
           <svg class="wa-ico" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 018.413 3.488 11.824 11.824 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.51 5.26l-.999 3.648 3.739-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.767.967-.94 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"/></svg>
           <span class="lbl">Falar com especialista</span>
         </a>
@@ -197,45 +289,41 @@
     </div>
   </header>
 
-  <!-- HERO -->
-  <section class="hero diag">
+  <!-- TOPO (replica do mockup, com a foto como fundo integrado) -->
+  <section class="chero">
     <div class="wrap">
-      <div class="hero-copy">
-        <span class="eyebrow">Link corporativo · Guarulhos e região</span>
-        <h1>Internet corporativa para sua empresa <span class="b">não parar.</span></h1>
-        <p class="lead">Banda exclusiva e simétrica em fibra óptica, com IP fixo e SLA de atendimento em até 24h. E o melhor: instalação gratuita e equipamentos em comodato, então a sua empresa começa sem investir em infraestrutura.</p>
-        <div class="hero-cta">
-          <a class="btn btn-wa btn-lg js-wa" href="#" data-loc="hero">
-            <svg class="wa-ico" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 018.413 3.488 11.824 11.824 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.51 5.26l-.999 3.648 3.739-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.767.967-.94 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"/></svg>
-            Pedir proposta no WhatsApp
-          </a>
-          <a class="btn btn-ghost btn-lg" href="#diferenca">Ver como funciona</a>
+      <div>
+        <div class="ckicker">Link corporativo &bull; Guarulhos e região</div>
+        <h1>Internet corporativa para sua empresa <span>não parar.</span></h1>
+        <p class="clead">Banda exclusiva e simétrica em fibra óptica, com IP fixo e SLA de atendimento em até 24h. E o melhor: instalação gratuita e equipamentos em comodato, então a sua empresa começa sem investir em infraestrutura.</p>
+        <div class="cctas">
+          <a class="cbtn cbtn-wa js-wa" href="#" data-loc="hero" data-msg="Olá! Vim pela página de Link Corporativo e quero pedir uma proposta de link corporativo para a minha empresa."><svg viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 018.413 3.488 11.824 11.824 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.51 5.26l-.999 3.648 3.739-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.767.967-.94 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"/></svg>Pedir proposta no WhatsApp</a>
+          <a class="cbtn cbtn-ghost js-wa" href="#" data-loc="hero-como-funciona" data-msg="Olá! Vim pela página de Link Corporativo, no botão Ver como funciona, e quero entender como funciona o link corporativo (banda exclusiva, IP fixo e SLA).">Ver como funciona</a>
         </div>
-        <ul class="hero-trust">
-          <li>Desde 2009 em Guarulhos</li>
-          <li>Backbone próprio 100% fibra</li>
-          <li>Instalação gratuita</li>
+        <ul class="ctrust">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><circle cx="12" cy="12" r="9"/><path d="M8.4 12.3l2.4 2.4 4.8-5"/></svg>Desde 2009 em Guarulhos</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><circle cx="12" cy="12" r="9"/><path d="M8.4 12.3l2.4 2.4 4.8-5"/></svg>Backbone próprio 100% fibra</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><circle cx="12" cy="12" r="9"/><path d="M8.4 12.3l2.4 2.4 4.8-5"/></svg>Instalação gratuita</li>
         </ul>
       </div>
-      <div class="hero-media">
-        <div class="ph"><img src="../assets/corp-hero.jpg" alt="Profissional em ambiente corporativo trabalhando com internet estável" /></div>
-        <div class="hero-badge">
-          <div class="n">24h</div>
-          <div class="t">SLA de atendimento<br />para resolver com agilidade</div>
-        </div>
+      <div class="chero-card">
+        <div class="c24"><b>24h</b></div>
+        <div class="ct"><b>SLA de atendimento</b><span>para resolver com agilidade</span></div>
       </div>
     </div>
   </section>
 
-  <!-- PILLS (padrão de marca) -->
-  <div class="pills">
+  <!-- FAIXA DE BENEFÍCIOS (replica do mockup) -->
+  <div class="cbenes">
     <div class="wrap">
-      <span class="pill">Instalação gratuita</span>
-      <span class="pill">Equipamentos em comodato</span>
-      <span class="pill">SLA de atendimento em até 24h</span>
-      <span class="pill">IP Fixo (PPPoE)</span>
-      <span class="pill">Baixa latência</span>
-      <span class="pill">Backbone próprio 100% fibra</span>
+      <div class="cbenes-box">
+        <div class="cbene"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M2 7h11v9H2z"/><path d="M13 10h4.2l3.3 3.2V16H13z"/><circle cx="6.4" cy="18.2" r="1.9"/><circle cx="17.2" cy="18.2" r="1.9"/></svg><span>Instalação gratuita</span></div>
+        <div class="cbene"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="13.5" width="19" height="6.5" rx="2"/><path d="M6 16.8h.01M10 16.8h7.5"/><path d="M8.2 9.4a5.4 5.4 0 017.6 0M10.6 6.6a9 9 0 012.8 0"/></svg><span>Equipamentos em comodato</span></div>
+        <div class="cbene"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 14.5v-3a8 8 0 0116 0v3"/><rect x="1.8" y="13.4" width="4.4" height="6.4" rx="1.7"/><rect x="17.8" y="13.4" width="4.4" height="6.4" rx="1.7"/><path d="M18.4 19.8v.4a2.9 2.9 0 01-2.9 2.9h-2"/></svg><span>SLA de atendimento em até 24h</span></div>
+        <div class="cbene"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3.2 12h17.6"/><path d="M12 3c2.6 2.8 2.6 15.2 0 18M12 3c-2.6 2.8-2.6 15.2 0 18"/></svg><span>IP Fixo (PPPoE)</span></div>
+        <div class="cbene"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3.6 18.4a9 9 0 1116.8 0"/><path d="M12 18.4l4.6-5.2"/><circle cx="12" cy="18.4" r="1.4" fill="currentColor" stroke="none"/></svg><span>Baixa latência</span></div>
+        <div class="cbene"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 12c3.6 0 4.6-5.2 8.4-5.2S15.9 12 21.5 12"/><path d="M2.5 17.4c3.6 0 4.6-5.2 8.4-5.2"/><circle cx="21" cy="7" r="1.7"/><circle cx="20.6" cy="16.6" r="1.7"/></svg><span>Backbone próprio 100% fibra</span></div>
+      </div>
     </div>
   </div>
 
@@ -264,79 +352,47 @@
     </div>
   </section>
 
-  <!-- SOLUÇÃO + COMPARATIVO -->
-  <section class="sol" id="diferenca">
+  <!-- A SOLUÇÃO + COMPARATIVO (replica do mockup) -->
+  <section class="msol" id="diferenca">
     <div class="wrap">
       <div>
-        <div class="kicker">A solução</div>
+        <div class="mk">A solução</div>
         <h2>Link corporativo não é internet compartilhada</h2>
         <p>No link corporativo, a banda é só da sua empresa. Simétrica, exclusiva e estável, sem disputar com vizinhos e sem cair no horário de pico. E a entrada não pesa: instalação gratuita e equipamento em comodato.</p>
       </div>
-      <div class="cmp">
-        <div class="row">
-          <div class="c htop">Recurso</div>
-          <div class="c htop">Compartilhado</div>
-          <div class="c htop hi">Link corporativo</div>
-        </div>
-        <div class="row">
-          <div class="c lbl">Banda</div>
-          <div class="c bad">Dividida com vizinhos</div>
-          <div class="c good">Exclusiva da empresa</div>
-        </div>
-        <div class="row">
-          <div class="c lbl">No horário de pico</div>
-          <div class="c bad">Cai e oscila</div>
-          <div class="c good">Simétrica e estável</div>
-        </div>
-        <div class="row">
-          <div class="c lbl">IP</div>
-          <div class="c bad">Dinâmico</div>
-          <div class="c good">Fixo (PPPoE)</div>
-        </div>
-        <div class="row">
-          <div class="c lbl">Atendimento</div>
-          <div class="c bad">Fila comum</div>
-          <div class="c good">SLA de atendimento em até 24h</div>
-        </div>
+      <div class="mtab">
+        <div class="r h"><div class="c">Recurso</div><div class="c">Compartilhado</div><div class="c hi">Link corporativo</div></div>
+        <div class="r"><div class="c">Banda</div><div class="c">Dividida com vizinhos</div><div class="c hi">Exclusiva da empresa</div></div>
+        <div class="r"><div class="c">No horário de pico</div><div class="c">Cai e oscila</div><div class="c hi">Simétrica e estável</div></div>
+        <div class="r"><div class="c">IP</div><div class="c">Dinâmico</div><div class="c hi">Fixo (PPPoE)</div></div>
+        <div class="r"><div class="c">Atendimento</div><div class="c">Fila comum</div><div class="c hi">SLA de atendimento em até 24h</div></div>
       </div>
     </div>
   </section>
 
-  <!-- IMAGEM CORPORATIVA (quebra visual entre o comparativo e o Por que) -->
-  <section class="foto-band">
-    <div class="wrap">
-      <img src="../assets/corp-equipe.jpg" alt="Equipe trabalhando conectada em ambiente corporativo" />
-    </div>
-  </section>
+  <!-- FAIXA DE FOTO (Imagem 2) -->
+  <div class="mband">
+    <div class="inner"><img src="../assets/corp-band.jpg" alt="Equipe corporativa reunida analisando dados no notebook" /></div>
+  </div>
 
-  <!-- POR QUE (posicionamento local) -->
-  <section class="why">
+  <!-- POR QUE A SEM LIMITE (replica do mockup) -->
+  <section class="mwhy">
     <div class="wrap">
       <div>
-        <div class="head" style="margin-bottom:26px">
-          <div class="kicker">Por que a Sem Limite</div>
-          <h2>Um provedor de Guarulhos, do lado da sua empresa</h2>
-        </div>
-        <div class="why-list">
-          <div class="why-item">
-            <h3>Presença local, não call center distante</h3><p>Estrutura e equipe em Guarulhos, para chegar rápido quando a sua empresa precisa.</p>
-          </div>
-          <div class="why-item">
-            <h3>Backbone próprio 100% em fibra</h3><p>Rede estruturada da ponta à ponta, o que sustenta a estabilidade que a operação exige.</p>
-          </div>
-          <div class="why-item">
-            <h3>Suporte técnico especializado</h3><p>Atendimento pessoal e SLA claro, com compromisso de resolver, não de deixar na espera.</p>
-          </div>
-          <div class="why-item">
-            <h3>Solução sob medida, sem custo para começar</h3><p>Instalação gratuita e equipamentos em comodato: você começa sem investir em infraestrutura.</p>
-          </div>
+        <div class="mk">Por que a Sem Limite</div>
+        <h2>Um provedor de Guarulhos, do lado da sua empresa</h2>
+        <div class="mwlist">
+          <div class="mwitem"><span class="mwico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21.5s-7-5.4-7-11a7 7 0 1114 0c0 5.6-7 11-7 11z"/><circle cx="12" cy="10.4" r="2.6"/></svg></span><div><h3>Presença local, não call center distante</h3><p>Estrutura e equipe em Guarulhos, para chegar rápido quando a sua empresa precisa.</p></div></div>
+          <div class="mwitem"><span class="mwico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 12c3.6 0 4.6-5.2 8.4-5.2S15.9 12 21.5 12"/><path d="M2.5 17.4c3.6 0 4.6-5.2 8.4-5.2"/><circle cx="21" cy="7" r="1.7"/><circle cx="20.6" cy="16.6" r="1.7"/></svg></span><div><h3>Backbone próprio 100% em fibra</h3><p>Rede estruturada da ponta à ponta, o que sustenta a estabilidade que a sua operação exige.</p></div></div>
+          <div class="mwitem"><span class="mwico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 14.5v-3a8 8 0 0116 0v3"/><rect x="1.8" y="13.4" width="4.4" height="6.4" rx="1.7"/><rect x="17.8" y="13.4" width="4.4" height="6.4" rx="1.7"/></svg></span><div><h3>Suporte técnico especializado</h3><p>Atendimento pessoal e SLA claro, com compromisso de resolver, não de deixar na espera.</p></div></div>
+          <div class="mwitem"><span class="mwico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.6l7.4 3.2v6c0 5-3.6 8.4-7.4 9.6-3.8-1.2-7.4-4.6-7.4-9.6v-6z"/><path d="M9 12l2.2 2.2L15.4 10"/></svg></span><div><h3>Solução sob medida, sem custo para começar</h3><p>Instalação gratuita e equipamentos em comodato: você começa sem investir em infraestrutura.</p></div></div>
         </div>
       </div>
-      <div class="facts">
-        <div class="fact"><div class="n">2009</div><div class="t">no mercado de Guarulhos, com dados e voz</div></div>
-        <div class="fact"><div class="n">100<small>%</small></div><div class="t">em fibra óptica, com backbone próprio</div></div>
-        <div class="fact"><div class="n">24h</div><div class="t">de SLA para atendimento especializado</div></div>
-        <div class="fact"><div class="n">IP<small>.</small></div><div class="t">fixo com autenticação PPPoE incluso</div></div>
+      <div class="mfacts">
+        <div class="mfact"><span class="mfico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2.4"/><path d="M3 9.6h18M8 3v4M16 3v4"/></svg></span><div><div class="n">2009</div><div class="t">no mercado de Guarulhos, com dados e voz</div></div></div>
+        <div class="mfact or"><span class="mfico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 12c3.6 0 4.6-5.2 8.4-5.2S15.9 12 21.5 12"/><path d="M2.5 17.4c3.6 0 4.6-5.2 8.4-5.2"/><circle cx="21" cy="7" r="1.7"/><circle cx="20.6" cy="16.6" r="1.7"/></svg></span><div><div class="n">100%</div><div class="t">em fibra óptica, com backbone próprio</div></div></div>
+        <div class="mfact"><span class="mfico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 14.5v-3a8 8 0 0116 0v3"/><rect x="1.8" y="13.4" width="4.4" height="6.4" rx="1.7"/><rect x="17.8" y="13.4" width="4.4" height="6.4" rx="1.7"/></svg></span><div><div class="n">24h</div><div class="t">de SLA para atendimento especializado</div></div></div>
+        <div class="mfact"><span class="mfico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="10.6" width="17" height="9.4" rx="2.2"/><path d="M8 10.6V8a4 4 0 018 0v2.6"/><path d="M12 14v3"/></svg></span><div><div class="n">IP.</div><div class="t">fixo com autenticação PPPoE incluso</div></div></div>
       </div>
     </div>
   </section>
@@ -374,7 +430,7 @@
     <div class="wrap">
       <h2>Peça a proposta de link corporativo para a sua empresa</h2>
       <p>Fale com um especialista pelo WhatsApp, informe o endereço e receba a melhor solução de internet corporativa para o seu negócio em Guarulhos e região.</p>
-      <a class="btn btn-wa btn-lg js-wa" href="#" data-loc="final">
+      <a class="btn btn-wa btn-lg js-wa" href="#" data-loc="final" data-msg="Olá! Cheguei ao final da página de Link Corporativo e quero pedir a proposta de link corporativo para a minha empresa.">
         <svg class="wa-ico" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 018.413 3.488 11.824 11.824 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.51 5.26l-.999 3.648 3.739-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.767.967-.94 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"/></svg>
         Falar com um especialista
       </a>
@@ -408,13 +464,13 @@
   </footer>
 
   <!-- Float WhatsApp -->
-  <a class="wa-float js-wa" href="#" data-loc="float" aria-label="WhatsApp">
+  <a class="wa-float js-wa" href="#" data-loc="float" aria-label="WhatsApp" data-msg="Olá! Estou na página de Link Corporativo e quero falar com a Sem Limite Telecom.">
     <svg viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 018.413 3.488 11.824 11.824 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.51 5.26l-.999 3.648 3.739-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.767.967-.94 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"/></svg>
   </a>
 
   <!-- Sticky mobile -->
   <div class="sticky-cta">
-    <a class="btn btn-wa js-wa" href="#" data-loc="sticky">
+    <a class="btn btn-wa js-wa" href="#" data-loc="sticky" data-msg="Olá! Vim pela página de Link Corporativo, pela barra fixa do celular, e quero pedir uma proposta.">
       <svg class="wa-ico" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 018.413 3.488 11.824 11.824 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.51 5.26l-.999 3.648 3.739-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.767.967-.94 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"/></svg>
       Pedir proposta no WhatsApp
     </a>
@@ -432,7 +488,7 @@
         e.preventDefault();
         window.dataLayer = window.dataLayer || [];
         window.dataLayer.push({ event: 'lead_whatsapp_click', cta_local: el.getAttribute('data-loc') || 'cta' });
-        window.open('https://api.whatsapp.com/send?phone=' + WHATSAPP + '&text=' + encodeURIComponent(MSG), '_blank');
+        window.open('https://api.whatsapp.com/send?phone=' + WHATSAPP + '&text=' + encodeURIComponent(el.getAttribute('data-msg') || MSG), '_blank');
       });
     });
   </script>

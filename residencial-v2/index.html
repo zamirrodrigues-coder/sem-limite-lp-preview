@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Internet Fibra Residencial em Guarulhos e Região | Sem Limite Telecom</title>
+  <meta name="description" content="Internet 100% fibra óptica, ilimitada e com IP válido em Guarulhos, Caraguatatuba, Assaré e Iguatu. TV e telefone fixo. Consulte os planos da sua cidade." />
+  <meta property="og:title" content="Internet Fibra Residencial | Sem Limite Telecom" />
+  <meta property="og:description" content="Internet de fibra que não trava na sua casa. Planos por cidade, TV e telefone fixo." />
+  <meta property="og:type" content="website" />
+
+  <!-- Google Tag Manager -->
+  
+  <!-- End Google Tag Manager -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <style>
+    :root{
+      --blue:#0D73B6; --blue-deep:#0a5a90; --navy:#242A5A; --navy-2:#1b2145;
+      --orange:#E46C24; --orange-2:#F07E2E; --ink:#1E1E1E; --muted:#5f6b78;
+      --line:#e6ebf0; --bg:#fff; --bg-soft:#f5f8fb; --wa:#25D366;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{font-family:'Archivo',system-ui,sans-serif;color:var(--ink);background:#fff;font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased}
+    img{max-width:100%;display:block}
+    a{color:inherit;text-decoration:none}
+    button{font:inherit;cursor:pointer}
+    .wrap{width:100%;max-width:1180px;margin:0 auto;padding:0 22px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;font-weight:700;font-size:15.5px;padding:14px 24px;border-radius:10px;border:none;cursor:pointer;transition:.16s;line-height:1;font-family:inherit;white-space:nowrap}
+    .btn-wa{background:var(--orange);color:#fff;box-shadow:0 8px 22px rgba(228,108,36,.28)}
+    .btn-wa:hover{background:var(--orange-2);transform:translateY(-1px)}
+    .btn-ghost{background:#fff;color:var(--blue);border:1.6px solid var(--line)}
+    .btn-ghost:hover{border-color:var(--blue)}
+    .btn-lg{padding:16px 28px;font-size:16.5px}
+    .wa-ico{width:19px;height:19px;flex-shrink:0}
+    .kicker{font-size:11.5px;font-weight:800;letter-spacing:1.3px;text-transform:uppercase;color:var(--orange);margin-bottom:12px}
+    section{padding:60px 0}
+    .head{max-width:60ch;margin:0 auto 40px;text-align:center}
+    .head h2{font-size:clamp(25px,3.4vw,35px);font-weight:900;letter-spacing:-.6px;color:var(--navy);line-height:1.12}
+    .head p{color:var(--muted);margin-top:12px;font-size:17px;font-weight:500}
+
+    /* HEADER */
+    .topbar{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.97);backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
+    .topbar .wrap{display:flex;align-items:center;justify-content:space-between;height:72px;gap:20px}
+    .brand{display:flex;align-items:center;gap:11px;flex-shrink:0}
+    .brand img{height:42px;width:auto}
+    .brand b{font-weight:900;color:var(--blue);font-size:17px;letter-spacing:-.3px}
+    .brand b span{color:var(--orange)}
+    .nav{display:flex;gap:26px}
+    .nav a{font-size:14.5px;font-weight:600;color:var(--navy)}
+    .nav a:hover{color:var(--blue)}
+    .top-right{display:flex;align-items:center;gap:16px}
+    .top-phone{text-align:right;line-height:1.15}
+    .top-phone span{display:block;font-weight:600;font-size:10px;color:var(--muted);letter-spacing:.5px;text-transform:uppercase}
+    .top-phone b{font-weight:800;color:var(--navy);font-size:15px}
+    @media(max-width:960px){.nav{display:none}}
+    @media(max-width:680px){.top-phone{display:none}.topbar .btn .lbl{display:none}.topbar .btn{padding:12px 15px}.topbar .wrap{height:64px}}
+
+    /* HERO */
+    .hero{position:relative;overflow:hidden;background:linear-gradient(120deg,#fff 0%,#fff 42%,#f0f7fc 100%)}
+    .hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:20px;align-items:center;padding:34px 22px 26px}
+    @media(max-width:900px){.hero .wrap{grid-template-columns:1fr;text-align:center;padding:26px 22px 10px}}
+    .hero h1{font-size:clamp(32px,4.6vw,50px);line-height:1.05;font-weight:900;letter-spacing:-1.1px;color:var(--navy)}
+    .hero h1 .b{color:var(--blue)}
+    .hero p.lead{font-size:clamp(16px,2vw,18.5px);color:var(--muted);margin:18px 0 24px;max-width:50ch;font-weight:500}
+    @media(max-width:900px){.hero p.lead{margin-left:auto;margin-right:auto}}
+    .hero-cta{display:flex;gap:12px;flex-wrap:wrap}
+    @media(max-width:900px){.hero-cta{justify-content:center}}
+    .hero-chips{display:flex;flex-wrap:wrap;margin-top:24px}
+    @media(max-width:900px){.hero-chips{justify-content:center}}
+    .hero-chips li{list-style:none;font-size:13.5px;font-weight:700;color:var(--navy);padding:2px 15px}
+    .hero-chips li:first-child{padding-left:0}
+    .hero-chips li+li{border-left:1px solid #d7dfe7}
+    .hero-mascot{display:flex;justify-content:center;align-items:flex-end;position:relative}
+    .hero-mascot::before{content:"";position:absolute;bottom:0;width:78%;height:78%;background:radial-gradient(circle at 50% 60%,rgba(13,115,182,.12),transparent 65%);z-index:0}
+    .hero-mascot img{position:relative;z-index:1;max-height:430px;width:auto;filter:drop-shadow(0 18px 30px rgba(27,33,69,.18))}
+    @media(max-width:900px){.hero-mascot img{max-height:320px}}
+
+    /* BENEFÍCIOS STRIP */
+    .benes{background:var(--bg-soft);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+    .benes .wrap{display:flex;flex-wrap:wrap;justify-content:center;padding:16px 22px}
+    .bene{font-size:14px;font-weight:700;color:var(--navy);padding:6px 20px}
+    .bene+.bene{border-left:1px solid #d7dfe7}
+    @media(max-width:680px){.bene+.bene{border-left:none}.bene{padding:6px 12px}}
+
+    /* PLANOS + SELETOR DE CIDADE */
+    .cidades{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-bottom:34px}
+    .cidade{border:1.6px solid var(--line);background:#fff;color:var(--navy);font-weight:800;font-size:14.5px;padding:11px 24px;border-radius:999px;transition:.16s}
+    .cidade:hover{border-color:var(--blue)}
+    .cidade.on{background:var(--blue);color:#fff;border-color:var(--blue)}
+    .planos{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+    @media(max-width:900px){.planos{grid-template-columns:1fr 1fr}}
+    @media(max-width:560px){.planos{grid-template-columns:1fr}}
+    .plano{border:1px solid var(--line);border-radius:16px;padding:26px 20px;text-align:center;background:#fff;display:flex;flex-direction:column;transition:.16s}
+    .plano:hover{border-color:var(--blue);box-shadow:0 14px 34px rgba(13,115,182,.10);transform:translateY(-2px)}
+    .plano.top{border:2px solid var(--orange);box-shadow:0 16px 38px rgba(228,108,36,.14);position:relative}
+    .plano .tag{position:absolute;top:-12px;left:50%;transform:translateX(-50%);background:var(--orange);color:#fff;font-size:10.5px;font-weight:800;padding:5px 14px;border-radius:20px;letter-spacing:.5px}
+    .p-circle{width:96px;height:96px;border-radius:50%;border:3px solid #e5eef6;display:flex;flex-direction:column;justify-content:center;margin:4px auto 14px}
+    .p-circle b{font-size:26px;font-weight:900;color:var(--blue);line-height:1}
+    .p-circle span{font-size:12px;font-weight:800;color:var(--navy);letter-spacing:1px}
+    .plano.top .p-circle{border-color:#fbdcc6}
+    .p-preco{font-size:40px;font-weight:900;color:var(--navy);line-height:1;letter-spacing:-1.6px}
+    .p-preco sup{font-size:17px;vertical-align:super;font-weight:800;margin-right:2px}
+    .p-preco small{font-size:13px;font-weight:700;color:var(--muted);letter-spacing:0}
+    .p-specs{list-style:none;display:grid;gap:8px;margin:18px 0 20px;font-size:13.5px;color:var(--muted);font-weight:500}
+    .p-specs li{display:flex;align-items:center;justify-content:center;gap:8px}
+    .p-specs svg{width:15px;height:15px;color:var(--blue);flex-shrink:0}
+    .plano .btn{margin-top:auto;width:100%}
+    .planos-nota{text-align:center;color:var(--muted);font-size:13px;margin-top:22px;font-weight:500}
+    /* Carrossel (usado quando a cidade tem 5 planos, ex: Assaré) */
+    .planos-wrap{position:relative}
+    .pcarr{display:none;position:absolute;top:50%;transform:translateY(-50%);z-index:3;width:44px;height:44px;border-radius:50%;background:var(--orange);color:#fff;border:none;font-size:24px;font-weight:900;line-height:1;box-shadow:0 8px 20px rgba(228,108,36,.32);align-items:center;justify-content:center}
+    .pcarr:hover{background:var(--orange-2)}
+    .pcarr.prev{left:-10px}.pcarr.next{right:-10px}
+    .planos-wrap.is-carousel .pcarr{display:flex}
+    .planos.carousel{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;gap:18px;padding:8px 6px 12px;scrollbar-width:thin}
+    .planos.carousel .plano{flex:0 0 258px;scroll-snap-align:center}
+    @media(max-width:560px){.planos.carousel .plano{flex:0 0 84%}.planos-wrap.is-carousel .pcarr{display:none}}
+
+    /* TV — pacotes replicados da arte (cores amostradas do original) */
+    .tv{background:var(--bg-soft)}
+    .tv-grid{display:grid;grid-template-columns:1fr;gap:26px;max-width:812px;margin:0 auto}
+    .tvpack{background:#fff;border:1px solid #eef4fa;border-radius:26px;box-shadow:0 18px 46px rgba(8,16,56,.09);display:grid;grid-template-columns:1fr 268px;overflow:hidden}
+    .tvpack-l{padding:38px 30px 36px 40px}
+    .tvpack-r{padding:34px 20px;border-left:1px solid #D6E4F1;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center}
+    .tvp-badge{display:inline-block;color:#fff;font-size:13.5px;font-weight:800;letter-spacing:.7px;text-transform:uppercase;padding:10px 26px;border-radius:999px;margin-bottom:20px}
+    .start .tvp-badge{background:#0966B9}
+    .premium .tvp-badge{background:#F05808}
+    .tvp-title{font-size:clamp(25px,3.3vw,37px);font-weight:900;letter-spacing:-1.2px;line-height:1.04;color:#081038;display:flex;align-items:flex-start;gap:10px;flex-wrap:wrap}
+    .start .tvp-title .hl{color:#0860B8}
+    .premium .tvp-title{color:#0048A8}
+    .tvp-spark{width:26px;height:26px;color:#0860B8;flex-shrink:0;margin-top:2px}
+    .tvp-sub{color:#505870;font-size:16px;font-weight:500;margin-top:12px;line-height:1.35;max-width:46ch}
+    .tvp-div{border:none;border-top:1px solid #E7F0F8;margin:22px 0 20px}
+    .tvp-list{list-style:none;display:grid;gap:15px}
+    .tvp-list li{display:flex;align-items:center;gap:13px;font-size:15.5px;font-weight:600;color:#081038}
+    .tvp-list svg{width:22px;height:22px;flex-shrink:0}
+    .start .tvp-list svg{color:#0060B8}
+    .premium .tvp-list svg{color:#0048A8}
+    .tvp-apenas{font-size:16px;font-weight:600}
+    .start .tvp-apenas{color:#0868B8}
+    .premium .tvp-apenas{color:#0040A0}
+    .tvp-preco{display:flex;align-items:flex-start;justify-content:center;gap:5px;margin:6px 0 26px}
+    .start .tvp-preco{color:#0868C0}
+    .premium .tvp-preco{color:#0040A0}
+    .tvp-preco .cifra{font-size:22px;font-weight:800;margin-top:17px}
+    .tvp-preco .num{font-size:74px;font-weight:900;line-height:.92;letter-spacing:-3px}
+    .tvp-preco .frac{display:flex;flex-direction:column;align-items:flex-start}
+    .tvp-preco .frac i{font-style:normal;font-size:26px;font-weight:800;line-height:1;margin-top:4px}
+    .tvp-preco .frac small{font-size:16px;font-weight:600;margin-top:14px}
+    .tvp-btn{display:inline-flex;align-items:center;gap:10px;color:#fff;font-weight:800;font-size:17px;padding:15px 30px;border-radius:14px;border:none;cursor:pointer;font-family:inherit;transition:.16s}
+    .start .tvp-btn{background:#F07820;box-shadow:0 12px 26px rgba(240,120,32,.34)}
+    .premium .tvp-btn{background:#F05808;box-shadow:0 12px 26px rgba(240,88,8,.34)}
+    .tvp-btn:hover{filter:brightness(1.06);transform:translateY(-2px)}
+    .tvp-btn svg{width:15px;height:15px}
+    @media(max-width:780px){
+      .tvpack{grid-template-columns:1fr}
+      .tvpack-l{padding:28px 24px 20px}
+      .tvpack-r{border-left:none;border-top:1px solid #D6E4F1;padding:22px 24px 28px}
+      .tvp-preco .num{font-size:58px}
+      .tvp-title{font-size:29px}
+    }
+    .tv-obs{text-align:center;color:var(--muted);font-size:12.5px;margin-top:20px;font-weight:500}
+
+    /* TELEFONIA */
+    .fone .wrap{display:grid;grid-template-columns:.85fr 1.15fr;gap:20px;align-items:center}
+    @media(max-width:860px){.fone .wrap{grid-template-columns:1fr;text-align:center}}
+    .fone-mascot{display:flex;justify-content:center}
+    .fone-mascot img{max-height:340px;width:auto;filter:drop-shadow(0 16px 26px rgba(27,33,69,.16))}
+    .fone h2{font-size:clamp(25px,3.2vw,34px);font-weight:900;color:var(--navy);letter-spacing:-.5px;line-height:1.12}
+    .fone h2 .b{color:var(--blue)}
+    .fone .preco{font-size:44px;font-weight:900;color:var(--orange);line-height:1;letter-spacing:-1.8px;margin:14px 0 6px}
+    .fone .preco sup{font-size:18px;vertical-align:super}.fone .preco small{font-size:14px;color:var(--muted);font-weight:700}
+    .fone-list{list-style:none;display:grid;gap:10px;margin:16px 0 22px;font-size:15px;color:var(--navy);font-weight:600}
+    @media(max-width:860px){.fone-list{max-width:360px;margin-left:auto;margin-right:auto;text-align:left}}
+    .fone-list li{display:flex;gap:10px;align-items:center}
+    .fone-list svg{width:18px;height:18px;color:var(--blue);flex-shrink:0}
+
+    /* POR QUE */
+    .why{background:var(--navy)}
+    .why .head h2{color:#fff}.why .kicker{color:var(--orange-2)}
+    .why-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+    @media(max-width:860px){.why-grid{grid-template-columns:1fr 1fr}}
+    @media(max-width:520px){.why-grid{grid-template-columns:1fr}}
+    .wy{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.10);border-left:3px solid var(--orange);border-radius:12px;padding:20px}
+    .wy h3{font-size:16px;font-weight:800;color:#fff;margin-bottom:5px}
+    .wy p{font-size:13.5px;color:#c3ccdf;font-weight:500}
+
+    /* COMO FUNCIONA */
+    .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;max-width:900px;margin:0 auto}
+    @media(max-width:720px){.steps{grid-template-columns:1fr}}
+    .step{display:flex;gap:14px;align-items:flex-start}
+    .step .num{width:38px;height:38px;border-radius:50%;background:var(--blue);color:#fff;font-weight:900;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+    .step h3{font-size:16.5px;font-weight:800;color:var(--navy);margin-bottom:3px}
+    .step p{font-size:14px;color:var(--muted);font-weight:500}
+    .steps-cta{text-align:center;margin-top:38px}
+
+    /* FAQ */
+    .faq{background:var(--bg-soft)}
+    .faq-list{max-width:820px;margin:0 auto;display:grid;gap:12px}
+    details{border:1px solid var(--line);border-radius:12px;background:#fff}
+    summary{cursor:pointer;list-style:none;padding:19px 22px;font-weight:800;font-size:16px;color:var(--navy);display:flex;justify-content:space-between;gap:14px}
+    summary::-webkit-details-marker{display:none}
+    summary .p{color:var(--orange);font-size:24px;line-height:1}
+    details[open] summary .p{transform:rotate(45deg)}
+    .ans{padding:0 22px 20px;color:var(--muted);font-size:15px;font-weight:500}
+
+    /* CTA FINAL */
+    .final{background:var(--blue);color:#fff;text-align:center}
+    .final h2{font-size:clamp(26px,3.6vw,38px);font-weight:900;letter-spacing:-.5px;max-width:22ch;margin:0 auto;line-height:1.1}
+    .final p{color:#dcecf7;font-size:18px;margin:14px auto 28px;max-width:50ch;font-weight:500}
+
+    /* FOOTER */
+    footer{background:#0f1428;color:#9fb0c4;padding:40px 0 26px;font-size:14px}
+    footer .fgrid{display:flex;flex-wrap:wrap;gap:30px;justify-content:space-between;padding-bottom:22px;border-bottom:1px solid rgba(255,255,255,.10)}
+    footer h4{color:#fff;font-size:13px;margin-bottom:10px;font-weight:800;text-transform:uppercase;letter-spacing:.6px}
+    footer .phones a{display:block;color:#d3e0ec;font-weight:700;margin-bottom:4px}
+    footer p{font-weight:500;max-width:300px}
+    footer .flinks a{display:block;color:#b9c6d6;font-weight:600;margin-bottom:5px}
+    footer .legal{padding-top:18px;font-size:12.5px;color:#7e8ea3;line-height:1.7}
+
+    .wa-float{position:fixed;right:18px;bottom:18px;z-index:60;width:58px;height:58px;border-radius:50%;background:var(--wa);display:flex;align-items:center;justify-content:center;box-shadow:0 10px 26px rgba(37,211,102,.45)}
+    .wa-float svg{width:30px;height:30px;color:#fff}
+    @media(max-width:720px){.wa-float{bottom:16px}}
+  </style>
+</head>
+<body>
+  
+
+  <!-- HEADER -->
+  <header class="topbar">
+    <div class="wrap">
+      <a class="brand" href="#top"><img src="../assets/logo.png" alt="Sem Limite Telecom" onerror="this.style.display='none'" /><b>SEM LIMITE <span>TELECOM</span></b></a>
+      <nav class="nav">
+        <a href="#internet">Internet</a>
+        <a href="#tv">TV</a>
+        <a href="#telefone">Telefone</a>
+        <a href="#cobertura">Cobertura</a>
+        <a href="#duvidas">Dúvidas</a>
+      </nav>
+      <div class="top-right">
+        <div class="top-phone"><span>Central</span><b>0800 350 5050</b></div>
+        <a class="btn btn-wa js-wa" href="#" data-loc="topbar" data-msg="Olá! Vim pela página de internet residencial, pelo botão do topo do site, e quero falar com a Sem Limite."><svg class="wa-ico" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 018.413 3.488 11.824 11.824 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.51 5.26l-.999 3.648 3.739-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.767.967-.94 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"/></svg><span class="lbl">Falar no WhatsApp</span></a>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap">
+      <div>
+        <div class="kicker">Internet fibra residencial · Guarulhos e região</div>
+        <h1>A melhor internet de fibra <span class="b">para a sua casa</span></h1>
+        <p class="lead">100% fibra óptica, internet ilimitada e IP válido. Para assistir, jogar, trabalhar e chamar em vídeo sem travar, com o suporte local da Sem Limite.</p>
+        <div class="hero-cta">
+          <a class="btn btn-wa btn-lg" href="#internet">Ver planos da minha cidade</a>
+          <a class="btn btn-ghost btn-lg js-wa" href="#" data-loc="hero" data-msg="Olá! Vim pela página de internet residencial e quero assinar um plano de fibra para a minha casa.">Assinar no WhatsApp</a>
+        </div>
+        <ul class="hero-chips">
+          <li>Internet ilimitada</li>
+          <li>100% fibra óptica</li>
+          <li>IP válido incluído</li>
+        </ul>
+      </div>
+      <div class="hero-mascot"><img src="../assets/mascote-app.png" alt="Mascote da Sem Limite Telecom com o app" /></div>
+    </div>
+  </section>
+
+  <!-- BENEFÍCIOS -->
+  <div class="benes">
+    <div class="wrap">
+      <span class="bene">Internet ilimitada</span>
+      <span class="bene">100% fibra óptica</span>
+      <span class="bene">IP válido</span>
+      <span class="bene">Upload alto</span>
+      <span class="bene">Suporte local</span>
+      <span class="bene">App Sem Limite</span>
+    </div>
+  </div>
+
+  <!-- PLANOS DE INTERNET -->
+  <section id="internet">
+    <div class="wrap">
+      <div class="head">
+        <div class="kicker">Planos de internet</div>
+        <h2>Escolha a sua cidade e o seu plano</h2>
+        <p>Todos os planos com internet ilimitada, 100% em fibra óptica e IP válido.</p>
+      </div>
+      <div class="cidades" id="cidades"></div>
+      <div class="planos-wrap">
+        <button class="pcarr prev" type="button" aria-label="Ver plano anterior">&#8249;</button>
+        <div class="planos" id="planos"></div>
+        <button class="pcarr next" type="button" aria-label="Ver próximo plano">&#8250;</button>
+      </div>
+      <p class="planos-nota">Valores e disponibilidade podem variar conforme o endereço. Confirme a viabilidade pelo WhatsApp.</p>
+    </div>
+  </section>
+
+  <!-- TV -->
+  <section class="tv" id="tv">
+    <div class="wrap">
+      <div class="head">
+        <div class="kicker">Planos de TV</div>
+        <h2>Diversão e entretenimento para toda a família</h2>
+        <p>Adicione TV ao seu plano de internet, com canais ao vivo e apps de streaming.</p>
+      </div>
+      <div class="tv-grid">
+      <article class="tvpack start">
+        <div class="tvpack-l">
+          <span class="tvp-badge">Pacote Start</span>
+          <h3 class="tvp-title"><span class="hl">+53</span> canais ao vivo<svg class="tvp-spark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 3v4M19 6l-2.6 2.6M21 13h-4"/></svg></h3>
+          <p class="tvp-sub">+ Box Studios + YouTube + Band, SBT, Record e RedeTV</p>
+          <hr class="tvp-div" />
+          <ul class="tvp-list"><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M8.4 12.3l2.4 2.4 4.8-5"/></svg>Mais de 53 canais ao vivo</li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M8.4 12.3l2.4 2.4 4.8-5"/></svg>Box Studios e YouTube inclusos</li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M8.4 12.3l2.4 2.4 4.8-5"/></svg>Band, SBT, Record e RedeTV incluídos</li></ul>
+        </div>
+        <div class="tvpack-r">
+          <span class="tvp-apenas">Apenas</span>
+          <div class="tvp-preco"><span class="cifra">R$</span><span class="num">14</span><span class="frac"><i>,99</i><small>/mês</small></span></div>
+          <button class="tvp-btn js-wa" data-loc="tv-start" data-msg="Olá! Quero contratar o Pacote Start de TV (+53 canais ao vivo) por R$ 14,99/mês.">Assine agora <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2"><path d="M9 5l7 7-7 7"/></svg></button>
+        </div>
+      </article>
+      <article class="tvpack premium">
+        <div class="tvpack-l">
+          <span class="tvp-badge">Pacote Premium</span>
+          <h3 class="tvp-title">+53 canais e mais 18</h3>
+          <p class="tvp-sub">Box Studios + YouTube + Band Sports, FishTV, Jovem Pan, Smithsonian e mais</p>
+          <hr class="tvp-div" />
+          <ul class="tvp-list"><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M8.4 12.3l2.4 2.4 4.8-5"/></svg>Mais de 53 canais + 18 adicionais</li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M8.4 12.3l2.4 2.4 4.8-5"/></svg>Band Sports, Band News e Record News</li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M8.4 12.3l2.4 2.4 4.8-5"/></svg>FishTV, Jovem Pan, Smithsonian e mais</li></ul>
+        </div>
+        <div class="tvpack-r">
+          <span class="tvp-apenas">Apenas</span>
+          <div class="tvp-preco"><span class="cifra">R$</span><span class="num">24</span><span class="frac"><i>,99</i><small>/mês</small></span></div>
+          <button class="tvp-btn js-wa" data-loc="tv-premium" data-msg="Olá! Quero contratar o Pacote Premium de TV (+53 canais e mais 18) por R$ 24,99/mês.">Assine agora <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2"><path d="M9 5l7 7-7 7"/></svg></button>
+        </div>
+      </article>
+      </div>
+      <p class="tv-obs">Os pacotes não incluem a TV Globo. Para acessar, use o app Globoplay gratuitamente. Consulte a viabilidade para o seu endereço.</p>
+    </div>
+  </section>
+
+  <!-- TELEFONIA FIXA -->
+  <section class="fone" id="telefone">
+    <div class="wrap">
+      <div class="fone-mascot"><img src="../assets/mascote-fone.png" alt="Mascote da Sem Limite Telecom com telefone fixo" /></div>
+      <div>
+        <div class="kicker">Telefonia fixa residencial</div>
+        <h2>Fale <span class="b">ilimitado</span> com quem você ama</h2>
+        <div class="preco"><sup>R$</sup>30<small>/mês</small></div>
+        <ul class="fone-list">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6L9 17l-5-5"/></svg>Ligações ilimitadas para fixos e celulares</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6L9 17l-5-5"/></svg>Locais e interurbanos, sem franquia</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6L9 17l-5-5"/></svg>Portabilidade: mantenha o seu número atual</li>
+        </ul>
+        <a class="btn btn-wa btn-lg js-wa" href="#" data-loc="telefone" data-msg="Olá! Vim pela página de internet residencial e quero adicionar a telefonia fixa (R$ 30/mês, ligações ilimitadas) ao meu plano.">Adicionar telefone fixo</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- POR QUE -->
+  <section class="why">
+    <div class="wrap">
+      <div class="head">
+        <div class="kicker">Por que a Sem Limite</div>
+        <h2>Um provedor de Guarulhos, do lado da sua casa</h2>
+      </div>
+      <div class="why-grid">
+        <div class="wy"><h3>Local, desde 2009</h3><p>Mais de uma década conectando a região, com atendimento perto de você.</p></div>
+        <div class="wy"><h3>Backbone próprio</h3><p>Rede 100% em fibra óptica, estruturada da ponta à ponta.</p></div>
+        <div class="wy"><h3>Suporte que atende</h3><p>Você fala com quem resolve, não com uma central distante.</p></div>
+        <div class="wy"><h3>App Sem Limite</h3><p>Segunda via, consumo e atendimento na palma da mão.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMO FUNCIONA -->
+  <section id="cobertura">
+    <div class="wrap">
+      <div class="head">
+        <div class="kicker">Como funciona</div>
+        <h2>Assinar é rápido e sem complicação</h2>
+      </div>
+      <div class="steps">
+        <div class="step"><span class="num">1</span><div><h3>Consulte a cobertura</h3><p>Mande o seu endereço pelo WhatsApp.</p></div></div>
+        <div class="step"><span class="num">2</span><div><h3>Escolha o seu plano</h3><p>Internet, e se quiser TV e telefone.</p></div></div>
+        <div class="step"><span class="num">3</span><div><h3>Agende a instalação</h3><p>A equipe instala e você já navega.</p></div></div>
+      </div>
+      <div class="steps-cta">
+        <a class="btn btn-wa btn-lg js-wa" href="#" data-loc="como-funciona" data-msg="Olá! Quero falar com o time da Sem Limite sobre internet para a minha casa.">
+          <svg class="wa-ico" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 018.413 3.488 11.824 11.824 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.51 5.26l-.999 3.648 3.739-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.767.967-.94 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"/></svg>
+          Falar com nosso time
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq" id="duvidas">
+    <div class="wrap">
+      <div class="head"><div class="kicker">Dúvidas comuns</div><h2>O que as pessoas costumam perguntar</h2></div>
+      <div class="faq-list">
+        <details open><summary>A internet é ilimitada mesmo? <span class="p">+</span></summary><div class="ans">Sim. Todos os planos são de internet ilimitada, sem franquia de dados, 100% em fibra óptica e com IP válido incluído.</div></details>
+        <details><summary>Quais cidades vocês atendem? <span class="p">+</span></summary><div class="ans">Atendemos Guarulhos, Caraguatatuba, Assaré e Iguatu. Selecione a sua cidade acima para ver os planos, ou confirme a cobertura do seu endereço pelo WhatsApp.</div></details>
+        <details><summary>Quais planos têm Wi-Fi 6? <span class="p">+</span></summary><div class="ans">O plano de 750 mega já vem com Wi-Fi 6. Nos demais planos, o roteador é o padrão. Confirme as condições na contratação.</div></details>
+        <details><summary>Posso adicionar TV e telefone? <span class="p">+</span></summary><div class="ans">Sim. Você pode somar o pacote de TV (Start ou Premium) e a telefonia fixa ao seu plano de internet. Fale com a gente pelo WhatsApp que montamos tudo junto.</div></details>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="final">
+    <div class="wrap">
+      <h2>Assine a fibra da Sem Limite na sua casa</h2>
+      <p>Mande o seu endereço pelo WhatsApp, confirme a cobertura e escolha o plano ideal para a sua casa.</p>
+      <a class="btn btn-wa btn-lg js-wa" href="#" data-loc="final" data-msg="Olá! Cheguei ao final da página de internet residencial e quero assinar a fibra da Sem Limite na minha casa."><svg class="wa-ico" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 018.413 3.488 11.824 11.824 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.51 5.26l-.999 3.648 3.739-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.767.967-.94 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"/></svg>Falar no WhatsApp</a>
+    </div>
+  </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="wrap">
+      <div class="fgrid">
+        <div style="max-width:320px">
+          <div class="brand" style="margin-bottom:12px"><b style="font-size:16px;color:#fff">SEM LIMITE TELECOM</b></div>
+          <p>Soluções em internet e telefonia com qualidade e estabilidade, 100% em fibra óptica, desde 2009.</p>
+        </div>
+        <div class="phones">
+          <h4>Central de atendimento</h4>
+          <a href="tel:1125002050">(11) 2500-2050</a>
+          <a href="tel:1125002051">(11) 2500-2051</a>
+          <a href="tel:08003505050">0800 350 5050</a>
+        </div>
+        <div>
+          <h4>Atendimento</h4>
+          <p>Seg a Sáb: 8h às 19h<br />Dom: 8h às 16h<br />Guarulhos, Caraguatatuba, Assaré e Iguatu</p>
+        </div>
+        <div class="flinks">
+          <h4>Institucional</h4>
+          <a href="#">Política de Privacidade</a>
+          <a href="#">Termos e Condições</a>
+          <a href="#" class="js-wa" data-loc="footer" data-msg="Olá! Vim pelo rodapé da página de internet residencial e quero falar com a Sem Limite.">Fale no WhatsApp</a>
+        </div>
+      </div>
+      <div class="legal">© 2024 Sem Limite Comunicações Ltda · CNPJ 10.958.851/0001-03 · Guarulhos-SP</div>
+    </div>
+  </footer>
+
+  <a class="wa-float js-wa" href="#" data-loc="float" aria-label="WhatsApp" data-msg="Olá! Estou na página de internet residencial e quero falar com a Sem Limite Telecom."><svg viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 018.413 3.488 11.824 11.824 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.51 5.26l-.999 3.648 3.739-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.767.967-.94 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"/></svg></a>
+
+  <script>
+    var WHATSAPP = "551125002051"; // (11) 2500-2051 - numero confirmado
+    function waOpen(text, loc){
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({ event:'lead_whatsapp_click', cta_local:loc||'cta', lp_version:'residencial-v2' });
+      window.open('https://api.whatsapp.com/send?phone='+WHATSAPP+'&text='+encodeURIComponent(text), '_blank');
+    }
+    document.querySelectorAll('.js-wa').forEach(function(el){
+      el.addEventListener('click', function(e){ e.preventDefault(); waOpen(el.getAttribute('data-msg') || 'Olá! Vim pela página de internet residencial e quero assinar um plano de fibra da Sem Limite.', el.getAttribute('data-loc')); });
+    });
+
+    // --- Planos por cidade ---
+    var PLANOS = {
+      90:  {preco:"65",    ct:"65",    dl:90,  ul:45,  wifi:false},
+      400: {preco:"79,90", ct:"79,90", dl:400, ul:200, wifi:false},
+      600: {preco:"89,90", ct:"89,90", dl:600, ul:300, wifi:false},
+      700: {preco:"99,90", ct:"99,90", dl:700, ul:350, wifi:false},
+      750: {preco:"129",   ct:"129",   dl:750, ul:375, wifi:true}
+    };
+    var CIDADES = {
+      "Guarulhos":     [400,600,700,750],
+      "Caraguatatuba": [400,600,700,750],
+      "Iguatu":        [400,600,700,750],
+      "Assaré":        [90,400,600,700,750]
+    };
+    var CK = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M20 6L9 17l-5-5"/></svg>';
+    function precoHTML(p){
+      var parts = p.preco.split(",");
+      var cents = parts[1] ? '<small>,'+parts[1]+'</small>' : '';
+      return '<sup>R$</sup>'+parts[0]+cents+'<small> /mês</small>';
+    }
+    function cardHTML(mega, cidade){
+      var p = PLANOS[mega];
+      var top = p.wifi ? ' top' : '';
+      var tag = p.wifi ? '<span class="tag">Wi-Fi 6</span>' : '';
+      var wifiLi = p.wifi ? '<li>'+CK+'Wi-Fi 6 incluso</li>' : '';
+      return '<article class="plano'+top+'">'+tag
+        + '<div class="p-circle"><b>'+mega+'</b><span>MEGA</span></div>'
+        + '<div class="p-preco">'+precoHTML(p)+'</div>'
+        + '<ul class="p-specs">'
+        +   '<li>'+CK+'Download '+p.dl+' mega</li>'
+        +   '<li>'+CK+'Upload '+p.ul+' mega</li>'
+        +   '<li>'+CK+'Internet ilimitada</li>'
+        +   '<li>'+CK+'IP válido</li>'
+        +   wifiLi
+        + '</ul>'
+        + '<button class="btn btn-wa js-plano" data-plano="'+mega+' MEGA por R$ '+p.ct+'/mês" data-cidade="'+cidade+'">Assine já</button>'
+        + '</article>';
+    }
+    function renderCidade(cidade){
+      var megas = CIDADES[cidade];
+      var planosEl = document.getElementById('planos');
+      var carrossel = megas.length > 4;
+      planosEl.className = 'planos' + (carrossel ? ' carousel' : '');
+      document.querySelector('.planos-wrap').classList.toggle('is-carousel', carrossel);
+      planosEl.innerHTML = megas.map(function(m){return cardHTML(m, cidade);}).join('');
+      planosEl.scrollLeft = 0;
+      document.querySelectorAll('#cidades .cidade').forEach(function(b){ b.classList.toggle('on', b.dataset.cidade===cidade); });
+      document.querySelectorAll('.js-plano').forEach(function(el){
+        el.addEventListener('click', function(e){
+          e.preventDefault();
+          waOpen('Olá! Quero assinar o plano '+el.dataset.plano+' em '+el.dataset.cidade+'. Pode confirmar a cobertura no meu endereço?', 'plano');
+        });
+      });
+    }
+    (function(){
+      var box = document.getElementById('cidades');
+      box.innerHTML = Object.keys(CIDADES).map(function(c){return '<button class="cidade" data-cidade="'+c+'">'+c+'</button>';}).join('');
+      box.querySelectorAll('.cidade').forEach(function(b){ b.addEventListener('click', function(){ renderCidade(b.dataset.cidade); }); });
+      var pl = document.getElementById('planos');
+      document.querySelector('.pcarr.prev').addEventListener('click', function(){ pl.scrollBy({left:-280,behavior:'smooth'}); });
+      document.querySelector('.pcarr.next').addEventListener('click', function(){ pl.scrollBy({left:280,behavior:'smooth'}); });
+      renderCidade('Guarulhos');
+    })();
+  </script>
+</body>
+</html>
